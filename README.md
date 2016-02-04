@@ -10,15 +10,15 @@ Project requirement:
 Choose a RTOS design that has at least the following threads
 2 HWi (posted as SWi)
 3 Tasks
-   	Idle
-    Identify the threads in your system design
-    Develop the SYS/BIO to run the threads
-   	 Demonstrate system operation on Tiva C LaunchPad with the peripherals.
+Idle
+Identify the threads in your system design
+Develop the SYS/BIO to run the threads
+Demonstrate system operation on Tiva C LaunchPad with the peripherals.
 
 Details
-   We decide to design a touch game named  .
+   We decide to design a touch game.
 
-Rules of  
+Rules of ColorRun_Game 
 •There are 6 different colors on the screen, and one word of color
 •Tap the right color according to the word
 •The color of the word is used to confuse you
