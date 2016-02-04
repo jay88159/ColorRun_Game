@@ -1,7 +1,9 @@
 # ColorRun_Game
+
 Introduction
 
 Using TI RTOS System to implement the Color Run Game.
+
 
 Objectives
 
@@ -10,6 +12,7 @@ Learn to use TI RTOS
 Learn to design a RTOS on Tiva C LaunchPad
 
 Learn to interface Tiva C LaunchPad with peripherals
+
 
 Description
 
@@ -29,9 +32,11 @@ Develop the SYS/BIO to run the threads
 
 Demonstrate system operation on Tiva C LaunchPad with the peripherals.
 
+
 Details
 
 We decide to design a touch game.
+
 
 Rules of ColorRun_Game
 
@@ -55,11 +60,13 @@ If you don’t tap, the screen refreshes after 2 seconds and you lose 2 points
 
 •Enjoy the game!!!
 
+
 (1)Start
 
 (2)End
 
 (3)Restart
+
 
 When you push the reset button, the game restarts.
  
@@ -73,6 +80,7 @@ This Hwi happens when the LCD screen is touched
 
 A timer counting for 2 seconds until it cause the interrupt, and if the right color is touched, reset the timer immediately.
 
+
 (2)Swi
 
 •TouchScreenSwi
@@ -83,6 +91,7 @@ Posed by Hwi ti_sysbios_family_arm_m3_Hwi0
 
 Posed by Hwi HWI_TIMER2
 
+
 (3)Task
 
 •TimerTask
@@ -91,17 +100,20 @@ Semaphore: AnoSem, posed by TimerTaskFxn()
 
 To disorder the 6 colors ramdonly and refresh the screen if the game is not yet end
 
+
 •grlibTask1
 
 Semaphore: QueSem, posed by TouchTestCallback()
 
 To draw the screen: 6 colors and 1 color word
 
+
 •Timer2task
 
 Semaphore: Timer2Sem, posed by Time2SwiFunc()
 
 To detect if player tap the right color and calculate the score, if score decreases to 0, stop the timer, if not, pose to active TimerTask
+
 
 (4)Idle
 
