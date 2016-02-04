@@ -19,16 +19,16 @@ Details
    We decide to design a touch game named  .
 
 Rules of  
-•	There are 6 different colors on the screen, and one word of color
-•	Tap the right color according to the word
-•	The color of the word is used to confuse you
-•	You have 2 seconds to get the right answer
-•	There are 3 conditions:
+•There are 6 different colors on the screen, and one word of color
+•Tap the right color according to the word
+•The color of the word is used to confuse you
+•You have 2 seconds to get the right answer
+•There are 3 conditions:
 	If you tap right, you get 1 point and the screen refreshes
 	If you tap wrong, you lose 1 point and the screen refreshes
 	If you don’t tap, the screen refreshes after 2 seconds and you lose 2 points
-•	You have 5 points at first, the game ends when your points are below 0. And the screen shows your highest score you ever got
-•	Enjoy the game!!!
+•You have 5 points at first, the game ends when your points are below 0. And the screen shows your highest score you ever got
+•Enjoy the game!!!
 
 (1)Start
 (2)End
