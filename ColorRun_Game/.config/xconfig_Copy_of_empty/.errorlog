@@ -1,0 +1,5 @@
+package.mak:163: warning: overriding commands for target `Copy'
+package.mak:139: warning: ignoring old commands for target `Copy'
+package.mak:163: warning: overriding commands for target `of'
+package.mak:139: warning: ignoring old commands for target `of'
+package.mak:174: *** target file `Copy' has both : and :: entries.  Stop.
